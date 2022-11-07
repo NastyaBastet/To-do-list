@@ -1,6 +1,4 @@
 import './App.css';
-import coverTwo from './coverTwo.jpg';
-import covermobile from './covermobile.jpg';
 import { List } from './List';
 
 function App() {

@@ -1,38 +1,131 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body{
+  background-image: url(coverTwo.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   }
+
+.center{
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  width: 350px;
+  background: rgba(46, 39, 245, 0.500);
+  min-height: 60vh;
+  box-shadow: inset black 1px 1px 6px;
 }
 
-.App-link {
-  color: #61dafb;
+h1{
+  font-family: 'Poor Story', cursive;
+  color: bisque;
+  text-shadow: black 4px 4px 7px;
+  font-size: 35px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+input{
+  width: 250px;
+  padding: 9px;
+  font-family: 'Poor Story', cursive;
+  height: 25px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: inset black 1px 1px 6px;
+}
+
+.add{
+  margin-left: 5px;
+  padding: 9px;
+  background-color: rgb(214, 193, 214);
+  border: none;
+  box-shadow: black 0 0 6px;
+  width: 35px;
+  border-radius: 5px;
+}
+
+ul{
+  padding-left: 0px;
+}
+
+li{
+  background-color: rgb(214, 193, 214);
+  width:250px;
+  margin: 0 auto;
+  border: 2px solid rgb(120, 27, 120);
+  border-width: 0 0 3px;
+  border-radius: 5px;
+  display: flex;
+  padding: 9px;
+  list-style-type: none;
+  font-family: 'Poor Story', cursive;
+  font-size: 20px;
+  box-shadow: rgba(0, 0, 0, 0.579) 2px 2px 5px;
+}
+
+.crossed{
+  text-decoration: line-through 3px wheat;
+  background: rgba(11, 9, 9, 0.323);
+}
+
+.deleteBtn{
+  margin-top: 40px;
+  font-family: 'Poor Story', cursive;
+  font-size: 15px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: rgba(247, 224, 236, 0.8);
+  box-shadow: rgba(0, 0, 0, 0.579) 2px 2px 5px;
+}
+
+.deleteBtn:hover{
+  background-color: rgba(11, 9, 9, 0.323);
+  color: antiquewhite;
+  border: 2px solid antiquewhite;
+  text-shadow: black 4px 4px 7px;
+}
+
+@media all and (max-width: 900px) {
+  body{
+    background-image: url(covermobile.jpg);
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media all and (max-width: 560px)
+{
+  h1{
+    font-size: 25px;
+  }
+}
+
+@media all and (max-width: 300px)
+{
+  h1{
+    font-size: 20px;
+  }
+  input{
+    width: 200px;
+    padding: 8px;
+    height: 23px;
+    font-size: 18px;
+  }
+
+  li{
+    width:220px;
+    padding: 7px;
+    font-size: 18px;
+  }
+
+  .deleteBtn{
+    margin-top: 20px;
+    font-size: 14px;
+    padding: 9px;
   }
 }
